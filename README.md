@@ -470,13 +470,13 @@ hold off
 </blockquote></details>
 
 <details>
-	<summary>Optimize <img src="https://render.githubusercontent.com/render/math?math=\lambda></summary><blockquote>
+	<summary>Optimize lambda</summary><blockquote>
 	
 ![image lambda](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Different%20Collaborative%20Filtering%20Algorithms%20in%20Recommendation%20System/optimize_lambda.png)
 </blockquote></details>
 
 <details>
-	<summary>Optimize $\mu$</summary><blockquote>
+	<summary>Optimize mu</summary><blockquote>
 	
 ![image mu](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Different%20Collaborative%20Filtering%20Algorithms%20in%20Recommendation%20System/optimize_mu.png)
 </blockquote></details>
