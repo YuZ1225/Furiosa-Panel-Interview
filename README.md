@@ -1,9 +1,17 @@
 # Furiosa Panel Interview
+This repository is used for quick access of Furiosa panel interview
+<br>
+
 ## Menu
 * [Resume](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/resume/resume_yuzhao.pdf)
-* [Projects](#project)
-* [Code Snippet](#code)
+* [Different Collaborative Filtering Algorithms in Recommendation System](#cf)
+* [Classification of Brazilian Names](#brz)
+* [Scramble String](#scrm)
+* [Edit Distance](#ed)
+<br>
 
+<a id = cf></a>
+## Different Collaborative Filtering Algorithms in Recommendation System
 ```Matlab
 %% Naive Bayes Collaborative Filter
 
@@ -13,7 +21,6 @@ fprintf('The total running time is about 720s. \n\n');
 
 % pred_label = zeros(label_num, 1);
 tmp_prob = zeros(label_num,5);
-
 
 for i = 1:1:label_num
     tic;
@@ -50,6 +57,7 @@ NB_output.pred_label = pred_label;
 
 end
 ```
+[Back to Menu](#menu)
 <br>
 
 
@@ -148,6 +156,7 @@ function [PMF_output]= PMF(data_matrix, rating_to_pred, iteration, d, weight_mis
     PMF_output.RMSE_baseline = RMSE_baseline;
 end
 ```
+[Back to Menu](#menu)
 <br>
 
 ```Matlab
@@ -433,9 +442,12 @@ hold off
 
 % save small_output_PMF.mat MAE_PMF RMSE_PMF
 ```
+[Back to Menu](#menu)
 <br>
 
-
+<a id = brz></a>
+## Classification of Brazilian Names
+<details>
 ```Matlab
 %% Name Classify through KNN Algorithm
 
@@ -583,6 +595,9 @@ csvwrite('sample.csv', lab);
 % lab(tmp+1, 2) = Y(id_tmp1(tmp));
 % csvwrite('sample.csv', lab);
 ```
+</details>
+
+
 <a id = ed></a>
 ```cpp
 class Solution {
@@ -622,5 +637,4 @@ public:
 [Back to Menu](#menu)
 <br>
 
-[Back to Menu](#menu)
-<br>
+
