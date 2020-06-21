@@ -667,18 +667,18 @@ csvwrite('sample.csv', lab);
 I noticed that if one string is a scramble of another, then they will have two properties:
 1. The characters in two string are the same.
 2. There will be a pivot point, and the two strings will only be one of the two conditions:
-	<blockquote>
+	<blockquote><b>
 
-	|first string|first part s1 | second part s2|
+	|first string: |first part s1 | second part s2|
 	|-----|-----|-----|
-	|second string|scramble(s1) | scramble(s2)|
+	|second string:|scramble(s1) | scramble(s2)|
 
 	or
 
-	|first string|first part s1 | second part s2|
+	|first string: |first part s1 | second part s2|
 	|-----|-----|-----|
-	|second string|scramble(s2) | scramble(s1)|
-	</blockquote>
+	|second string: |scramble(s2) | scramble(s1)|
+	</b></blockquote>
 
 Then we can use recurrisive method to solve this problem.
 
