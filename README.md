@@ -18,7 +18,7 @@ Here are our full report of this project: [full report](https://github.com/YuZ12
 
 Here are our ppt presentation of this project: [ppt](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Different%20Collaborative%20Filtering%20Algorithms%20in%20Recommendation%20System/final_presentation.pptx)
 
-Following are some code snippets that I contribute in this project.
+Following are some code snippets that I contributed in this project.
 
 <details>
 	<summary> Naive Bayes Collaborative Filter Code </summary>
@@ -506,6 +506,8 @@ Here are our poster presentation of this project: [poster](https://github.com/Yu
 
 In this project I came up with an idea to convert the names, which are strings, into unique numbers with base 26. Then use KNN algorithms to classify the names. The result shows that using this method has a big advantage in running time, which are in seconds, while having a good accuracy rate at the same time.
 
+Following is a code snippet that I contributed in this project.
+
 <details>
 	<summary>Name Classify through KNN Algorithm Code</summary>
 	
@@ -662,7 +664,21 @@ csvwrite('sample.csv', lab);
 
 <a id = scrm></a>
 ## Leetcode 87. Scramble String
+I noticed that if one string is a scramble of another, then it will satisfy two conditions:
+1. The characters in two string are the same.
+2. There will be a pivot point, and:
 
+string 1 | string 2
+--------------------
+scramble(s1) | scramble(s2)
+
+or
+
+string s1 | string s2
+--------------------
+scramble(s2) | scramble(s1)
+
+I posted my solution on the leetcode discussion board: [my solution](https://leetcode.com/problems/scramble-string/discuss/635917/easy-understand-4ms-c-recursive-solution)
 
 
 <a id = ed></a>
