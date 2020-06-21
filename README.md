@@ -1,49 +1,11 @@
 # Furiosa Panel Interview
 ## Menu
-* Resume
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
-<br>
-<br>
-<br>
+* [Resume](#resume)
+* [Projects](#project)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-[back to menu](#menu)
+[Back to Menu](#menu)
+[Back to Menu](#menu)
+[Back to Menu](#menu)
+[Back to Menu](#menu)
