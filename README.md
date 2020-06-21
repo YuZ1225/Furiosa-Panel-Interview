@@ -2,6 +2,7 @@
 ## Menu
 * [Resume](#resume)
 * [Projects](#project)
+* [Code Snippet](#code)
 
 
 
