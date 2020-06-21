@@ -678,6 +678,7 @@ I noticed that if one string is a scramble of another, then they will have two p
 	|first string: |first part s1 | second part s2|
 	|-----|-----|-----|
 	|second string: |scramble(s2) | scramble(s1)|
+	
 	</b></blockquote>
 
 Then we can use recurrisive method to solve this problem.
