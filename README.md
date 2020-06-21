@@ -466,26 +466,26 @@ hold off
 <details>
 	<summary>Optimize latent dimension d</summary><blockquote>
 
-![image d](https://octodex.github.com/images/yaktocat.png)
+![image d](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Different%20Collaborative%20Filtering%20Algorithms%20in%20Recommendation%20System/optimize_d.png)
 </blockquote></details>
 
 <details>
-	<summary>Optimize $\lambda$</summary>
+	<summary>Optimize $\lambda$</summary><blockquote>
 	
-![image d](https://octodex.github.com/images/yaktocat.png)
-</details>
+![image lambda](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Different%20Collaborative%20Filtering%20Algorithms%20in%20Recommendation%20System/optimize_lambda.png)
+</blockquote></details>
 
 <details>
-	<summary>Some result images</summary>
+	<summary>Optimize $\mu$</summary><blockquote>
 	
-![image d](https://octodex.github.com/images/yaktocat.png)
-</details>
+![image mu](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Different%20Collaborative%20Filtering%20Algorithms%20in%20Recommendation%20System/optimize_mu.png)
+</blockquote></details>
 
 <details>
-	<summary>Some result images</summary>
+	<summary>Some result images</summary><blockquote>
 	
-![image d](https://octodex.github.com/images/yaktocat.png)
-</details>
+![image 3d](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Different%20Collaborative%20Filtering%20Algorithms%20in%20Recommendation%20System/UV_entire_in_3d.png)
+</blockquote></details>
 
 </blockquote></details>
 
