@@ -688,6 +688,21 @@ I posted my solution on the leetcode discussion board here: [my solution](https:
 
 <a id = ed></a>
 ## Leetcode 72. Edit Distance
+In this problem I came up with a solution using 2d dynamic programming, as the following shows:
+<blockquote><b>
+
+| e | 4 |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| s | 3 |   |   |   |   |   |
+| o | 2 | 2 | 1 | 2 |   |   |
+| r | 1 | 1 | 2 | 2 | 3 | 4 |
+|   | 0 | 1 | 2 | 3 | 4 | 5 |
+|   |   | h | o | r | s | e |
+
+</b></blockquote>
+
+
+
 <details>
 	<summary> My solution </summary>
 	
