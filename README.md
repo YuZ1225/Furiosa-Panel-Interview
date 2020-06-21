@@ -463,11 +463,11 @@ hold off
 <details>
 	<summary>Some result images</summary>
 	
-	<details>
-		<summary>Optimize latent dimension d</summary>
+<details>
+	<summary>Optimize latent dimension d</summary>
 
-	![image d](https://octodex.github.com/images/yaktocat.png)
-	</details>
+![image d](https://octodex.github.com/images/yaktocat.png)
+</details>
 
 <details>
 	<summary>Optimize $\lambda$</summary>
