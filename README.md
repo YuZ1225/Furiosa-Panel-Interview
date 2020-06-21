@@ -164,8 +164,6 @@ end
 ```
 </details>
 
-[Back to Menu](#menu)
-<br>
 
 <details>
 	<summary> Test and optimize parameter of PMF </summary>
@@ -455,8 +453,6 @@ hold off
 ```
 </details>
 
-[Back to Menu](#menu)
-<br>
 
 <a id = brz></a>
 ## Classification of Brazilian Names
@@ -612,14 +608,11 @@ csvwrite('sample.csv', lab);
 ```
 </details>
 
-[Back to Menu](#menu)
-<br>
+
 
 <a id = scrm></a>
 ## Leetcode 87. Scramble String
 
-[Back to Menu](#menu)
-<br>
 
 
 <a id = ed></a>
@@ -656,7 +649,3 @@ public:
 };
 ```
 </details>
-
-[Back to Menu](#menu)
-<br>
-
