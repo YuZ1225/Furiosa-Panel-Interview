@@ -482,7 +482,13 @@ hold off
 </blockquote></details>
 
 <details>
-	<summary>Some result images</summary><blockquote>
+	<summary>PMF process</summary><blockquote>
+	
+![image pmf](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Different%20Collaborative%20Filtering%20Algorithms%20in%20Recommendation%20System/pmf_d_3_10.png)
+</blockquote></details>
+
+<details>
+	<summary>Dataset distribution in 3D</summary><blockquote>
 	
 ![image 3d](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Different%20Collaborative%20Filtering%20Algorithms%20in%20Recommendation%20System/UV_entire_in_3d.png)
 </blockquote></details>
@@ -492,6 +498,12 @@ hold off
 
 <a id = brz></a>
 ## Classification of Brazilian Names
+In this project we want to identify the Brazilian immigrants who are in the USA through their names. We got the dataset with 60k full names. In the end we established four different methods to identify the Brazilian names.
+
+Here are our full report of this project: [full report](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Classification%20of%20Brazilian%20Names/Final_report.pdf)
+
+Here are our poster presentation of this project: [ppt](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Different%20Collaborative%20Filtering%20Algorithms%20in%20Recommendation%20System/final_presentation.pptx)
+
 <details>
 	<summary>Name Classify through KNN Algorithm Code</summary>
 	
