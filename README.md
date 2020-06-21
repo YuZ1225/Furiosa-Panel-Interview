@@ -1,6 +1,6 @@
 # Furiosa Panel Interview
 ## Menu
-* [Resume](#resume)
+* [Resume](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/resume/resume_yuzhao.pdf)
 * [Projects](#project)
 * [Code Snippet](#code)
 
