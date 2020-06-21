@@ -14,6 +14,7 @@ This repository is used for quick access of Furiosa panel interview
 ## Different Collaborative Filtering Algorithms in Recommendation System
 <details>
 	<summary> sss </summary>
+	
 	```Matlab
 	%% Naive Bayes Collaborative Filter
 
@@ -66,6 +67,7 @@ This repository is used for quick access of Furiosa panel interview
 
 <details>
 	<summary> sss </summary>
+	
 	```Matlab
 	%% Probabolistic Matrix Factorization
 
@@ -167,6 +169,7 @@ This repository is used for quick access of Furiosa panel interview
 
 <details>
 	<summary>sss</summary>
+	
 	```Matlab
 	%% test and optimize parameter of PMF
 	% [PMF_output]= PMF(data_matrix, rating_to_pred, iteration, d, weight_missing, mu, lambda, rm)
@@ -458,6 +461,7 @@ This repository is used for quick access of Furiosa panel interview
 ## Classification of Brazilian Names
 <details>
 	<summary>sss</summary>
+	
 	```Matlab
 	%% Name Classify through KNN Algorithm
 
@@ -609,35 +613,39 @@ This repository is used for quick access of Furiosa panel interview
 
 
 <a id = ed></a>
-```cpp
-class Solution {
-public:
-    int minDistance(string word1, string word2) {
-        // -----BOTOM-UP DP-----
-        int m = word1.size();
-        int n = word2.size();
-        vector<vector<int>> ans(m + 1, vector<int>(n + 1, 0));
-        for(int i = 0; i < m + 1; i++){
-            ans[i][0] = i;
-        }
-        for(int i = 0; i < n + 1; i++){
-            ans[0][i] = i;
-        }
-        for(int i = 1; i < m + 1; i++){
-            for(int j = 1; j < n + 1; j++){
-                if(word1[i-1] == word2[j-1]){
-                    ans[i][j] = ans[i-1][j-1];
-                }
-                else{
-                    ans[i][j] = min(min(ans[i-1][j], ans[i-1][j-1]), ans[i][j-1]) + 1;
-                }
-            }
-        }
-        return ans[m][n];
-    }
-};
-```
-
+## Leetcode 72. Edit Distance
+<details>
+	<summary> sss </summary>
+	
+	```cpp
+	class Solution {
+	public:
+	    int minDistance(string word1, string word2) {
+		// -----BOTOM-UP DP-----
+		int m = word1.size();
+		int n = word2.size();
+		vector<vector<int>> ans(m + 1, vector<int>(n + 1, 0));
+		for(int i = 0; i < m + 1; i++){
+		    ans[i][0] = i;
+		}
+		for(int i = 0; i < n + 1; i++){
+		    ans[0][i] = i;
+		}
+		for(int i = 1; i < m + 1; i++){
+		    for(int j = 1; j < n + 1; j++){
+			if(word1[i-1] == word2[j-1]){
+			    ans[i][j] = ans[i-1][j-1];
+			}
+			else{
+			    ans[i][j] = min(min(ans[i-1][j], ans[i-1][j-1]), ans[i][j-1]) + 1;
+			}
+		    }
+		}
+		return ans[m][n];
+	    }
+	};
+	```
+</details>
 [Back to Menu](#menu)
 <br>
 
