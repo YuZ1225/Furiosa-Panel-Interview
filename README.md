@@ -705,7 +705,8 @@ In this 2d vector(or list), <b>dp[i][j]</b> means the minimum distance between s
 
 Notice that if dp[0][i] != dp[j][0], then the value of dp[i][j] will be the minum of (dp[i-1][j-1], dp[i-1][j], dp[i][j-1]) plus one. If dp[0][i] == dp[j][0], then we can leave dp[0][i] and dp[j][0] alone, while dp[i][j] will always equal to dp[i-1][j-1]. Therefore we can fullfill the table and we can always find the minimum way through the table as the following shows:
 <blockquote>
-
+	
+|   |   |   |   |   |   |   |
 |---|---|---|---|---|---|---|
 | e | 4 | 4 | 3 | 3 | 3 | ***2*** |
 | s | 3 | 3 | 2 | 2 | ***2*** | 3 |
