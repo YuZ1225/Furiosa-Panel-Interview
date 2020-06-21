@@ -12,6 +12,7 @@ This repository is used for quick access of Furiosa panel interview
 
 <a id = cf></a>
 ## Different Collaborative Filtering Algorithms in Recommendation System
+<a id = dd></a>
 <details>
 	<summary> sss </summary>
 	
@@ -62,7 +63,7 @@ end
 ```
 </details>
 
-[Back to Menu](#menu)
+[Back to Menu](#dd)
 <br>
 
 <details>
