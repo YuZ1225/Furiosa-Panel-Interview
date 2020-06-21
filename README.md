@@ -4,7 +4,7 @@
 * [Projects](#project)
 * [Code Snippet](#code)
 
-```m
+```Matlab
 %% Naive Bayes Collaborative Filter
 
 function [NB_output]= NB(data_matrix, rating_to_pred)
