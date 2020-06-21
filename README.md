@@ -461,7 +461,7 @@ hold off
 </details>
 
 <details>
-	<summary>Some result images</summary>
+	<summary>Some result images</summary><blockquote>
 	
 <details>
 	<summary>Optimize latent dimension d</summary><blockquote>
@@ -487,7 +487,7 @@ hold off
 ![image d](https://octodex.github.com/images/yaktocat.png)
 </details>
 
-</details>
+</blockquote></details>
 
 
 <a id = brz></a>
