@@ -664,17 +664,18 @@ csvwrite('sample.csv', lab);
 
 <a id = scrm></a>
 ## Leetcode 87. Scramble String
-I noticed that if one string is a scramble of another, then it will satisfy two conditions:
+I noticed that if one string is a scramble of another, then they will have two properties:
 1. The characters in two string are the same.
-2. There will be a pivot point, and:
-
+2. There will be a pivot point, and the two strings will only be one of the two conditions:
 |string s1 | string s2|
+|-----|-----|
 |scramble(s1) | scramble(s2)|
-
 or
-
 |string s1 | string s2|
+|-----|-----|
 |scramble(s2) | scramble(s1)|
+
+Then we can use recurrisive method to solve this problem.
 
 I posted my solution on the leetcode discussion board: [my solution](https://leetcode.com/problems/scramble-string/discuss/635917/easy-understand-4ms-c-recursive-solution)
 
