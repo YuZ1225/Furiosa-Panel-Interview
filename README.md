@@ -13,9 +13,8 @@ This repository is used for quick access of Furiosa panel interview
 <a id = cf></a>
 ## Different Collaborative Filtering Algorithms in Recommendation System
 
-<a id = dd></a>
 <details>
-	<summary> sss </summary>
+	<summary> Naive Bayes Collaborative Filter Code </summary>
 	
 ```Matlab
 %% Naive Bayes Collaborative Filter
@@ -62,14 +61,11 @@ NB_output.pred_label = pred_label;
 
 end
 ```
-<summary> sss </summary>
 </details>
 
-[Back to Menu](#dd)
-<br>
 
 <details>
-	<summary> sss </summary>
+	<summary> Probabolistic Matrix Factorization Code </summary>
 	
 ```Matlab
 %% Probabolistic Matrix Factorization
@@ -172,7 +168,7 @@ end
 <br>
 
 <details>
-	<summary>sss</summary>
+	<summary> Test and optimize parameter of PMF </summary>
 	
 ```Matlab
 %% test and optimize parameter of PMF
@@ -465,7 +461,7 @@ hold off
 <a id = brz></a>
 ## Classification of Brazilian Names
 <details>
-	<summary>sss</summary>
+	<summary>Name Classify through KNN Algorithm Code</summary>
 	
 ```Matlab
 %% Name Classify through KNN Algorithm
@@ -629,7 +625,7 @@ csvwrite('sample.csv', lab);
 <a id = ed></a>
 ## Leetcode 72. Edit Distance
 <details>
-	<summary> sss </summary>
+	<summary> My solution </summary>
 	
 ```cpp
 class Solution {
