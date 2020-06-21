@@ -498,11 +498,13 @@ hold off
 
 <a id = brz></a>
 ## Classification of Brazilian Names
-In this project we want to identify the Brazilian immigrants who are in the USA through their names. We got the dataset with 60k full names. In the end we established four different methods to identify the Brazilian names.
+In this project we want to identify the Brazilian immigrants who are in the USA by their names. We got the dataset with 60k full names. In the end we established four different kinds of methods to identify the Brazilian names.
 
-Here are our full report of this project: [full report](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Classification%20of%20Brazilian%20Names/Final_report.pdf)
+Here are our full report of this project: [full report](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Classification%20of%20Brazilian%20Names/CS542_Final_Report.pdf)
 
-Here are our poster presentation of this project: [ppt](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Different%20Collaborative%20Filtering%20Algorithms%20in%20Recommendation%20System/final_presentation.pptx)
+Here are our poster presentation of this project: [poster](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Classification%20of%20Brazilian%20Names/CS542_Poster_Group1_Digaai.pdf)
+
+In this project I came up with an idea to convert the names, which are strings, into unique numbers with base 26. Then use KNN algorithms to classify the names. The result shows that using this method has a big advantage in running time, which are in seconds, while having a good accuracy rate at the same time.
 
 <details>
 	<summary>Name Classify through KNN Algorithm Code</summary>
