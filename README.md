@@ -76,6 +76,7 @@ function [PMF_output]= PMF(data_matrix, rating_to_pred, iteration, d, weight_mis
   
 
     [itm_num, usr_num] = size(data_matrix);
+    
 %     iter = 100;          % iteraton number
 %     
 %     para_d = 10;    % dimension of latent feature
@@ -84,6 +85,7 @@ function [PMF_output]= PMF(data_matrix, rating_to_pred, iteration, d, weight_mis
 %     para_lambda = 0.2;  % regularization parameter
 %     para_rm = mean(data_matrix(data_matrix>0)); % offset of missing rating
 %     para_rm = 0;
+
     iter = iteration;
     para_d = d;
     para_weight = weight_missing;
@@ -95,12 +97,7 @@ function [PMF_output]= PMF(data_matrix, rating_to_pred, iteration, d, weight_mis
     MAE_baseline = mean(abs(rating_to_pred(:,3) - baseline));
     RMSE_baseline = sqrt(mean((rating_to_pred(:,3) - baseline).^2));
     
-%     bad initialize    
-%     U = ones(itm_num, para_d); % item matrix
-%     V = ones(usr_num, para_d); % user matrix
-%     U = U / sqrt(para_d/5);
-%     V = V / sqrt(para_d);
-
+%    Initialization
     U = (1 * randn(para_d, itm_num) + 1/sqrt(para_d/3))';
     V = (1 * randn(para_d, usr_num) + 1/sqrt(para_d/3))';
     
@@ -122,39 +119,22 @@ function [PMF_output]= PMF(data_matrix, rating_to_pred, iteration, d, weight_mis
     
     for i = 1:1:iter
         tic;
-%         for entire data set this is too slow
-%         U = U - para_mu * (-(tmp_W .* (data_matrix - (para_rm + U*V'))) * V + para_lambda * U);
-%         V = V - para_mu * (-(tmp_W .* (data_matrix - (para_rm + U*V')))' * U + para_lambda * V);
-
+        
+%     Gradient descent
         U = U - para_mu * (-(W .* (data_matrix - U*V')) * V + para_lambda * U);
         V = V - para_mu * (-(W .* (data_matrix - U*V'))' * U + para_lambda * V);
 
-%         incorrect method. these parameter cannot be optimized by this way
-%         para_lambda = para_lambda - para_mu/100*(sum(sum(U.^2)) + sum(sum(V.^2)))/2;
-%         para_weight = para_weight - para_mu/10000* sum(sum(((W_m .* (data_matrix - (para_rm + U*V'))).^2)))/2;
-%         para_rm = para_rm - para_mu/100*sum(sum(-(tmp_W .* (data_matrix - (para_rm + U*V')))));
-        
         tmp_result = (U*V');
         label_pred(:, i) = tmp_result(tmp_index);
         MAE_iter(i, 1) = mean(abs(label_pred(:, i) - rating_to_pred(:,3)));
         RMSE_iter(i, 1) = sqrt(immse(label_pred(:, i), rating_to_pred(:,3)));
         
-%         tmp_result = round(U*V');
         label_pred_round(:, i) = round(label_pred(:, i));
         MAE_iter_round(i, 1) = mean(abs(label_pred_round(:, i) - rating_to_pred(:,3)));
         RMSE_iter_round(i, 1) = sqrt(immse(label_pred_round(:, i), rating_to_pred(:,3)));
         tmp_result = [];    % clear memory
         toc;
     end
-    
-    % save tmp.mat U V label_pred MAE_iter RMSE_iter label_pred_round
-    % MAE_iter_round RMSE_iter_round i para_d para_weight para_mu
-    % para_lambda data_matrix rating_to_pred W tmp_index MAE_baseline RMSE_baseline
-    
-    % PMF_output_d10 = PMF_output
-    % save PMF_entire_d10.mat PMF_output_d10
-    % PMF_output_d3 = PMF_output
-    % save PMF_entire_d3.mat PMF_output_d3
     
     PMF_output.U = U;
     PMF_output.V = V;
@@ -183,6 +163,8 @@ end
 %         PMF_output.label_pred_round = label_pred_round;
 %         PMF_output.MAE_baseline = MAE_baseline;
 %         PMF_output.RMSE_baseline = RMSE_baseline;
+
+
 %% optimize d;
 load('data.mat')
 data_matrix = cellofmatrix{5};
@@ -239,6 +221,7 @@ ylabel('MAE')
 % no difference...
 % choose d = 3, d = 5;
 
+
 %% optimize mu
 d = 3;
 figure
@@ -258,10 +241,11 @@ for mu = 0.001:0.004:0.013
     title(str)
     xlabel('Iteration')
     ylabel('MAE & RMSE')
-    
 end
 % choose mu = 0.005
 mu = 0.005;
+
+
 %% optimize lambda
 figure
 subplot(1,2,1);
@@ -300,10 +284,11 @@ title(str)
 xlabel('Iteration')
 ylabel('RMSE')
 
-
 % don't understand how lambda works
 % choose lambda = 0.01
 lambda = 0.01;
+
+
 %% cluster using kmeans with k=2 and k=3
 d = 3;
 mu = 0.005;
@@ -361,7 +346,6 @@ for i = 1:9:10  % 3
     grid on
     str = ['V: User Matrix Data Distribution with Sparsity ', num2str(tmp)];
     title(str) 
-    
 end
 
 d = 2;
@@ -421,6 +405,7 @@ for i = 1:9:10  % 3
     title(str) 
 end
 
+
 %% using optimized parameter to get the output over 10 smalldataset
 load('data.mat')
 
@@ -432,7 +417,6 @@ rm = 0;
 d = 3;
 MAE_PMF = zeros(numel(cellofmatrix), 1);
 RMSE_PMF = zeros(numel(cellofmatrix), 1);
-
 
 for i = 1:1:numel(cellofmatrix)
     data_matrix = cellofmatrix{i};
