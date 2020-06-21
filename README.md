@@ -1,6 +1,6 @@
 # Furiosa Panel Interview
 ## Menu
-*Resume
+* Resume
 <br>
 <br>
 <br>
