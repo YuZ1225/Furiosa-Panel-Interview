@@ -13,7 +13,9 @@ This repository is used for quick access of Furiosa panel interview.
 <a id = cf></a>
 ## Different Collaborative Filtering Algorithms in Recommendation System
 In this project we try to use different kinds of collaborative filtering algorithms to build up a book recommendation system. We use the dataset from [kaggle](https://www.kaggle.com/philippsp/book-recommender-collaborative-filtering-shiny). In this dataset, we have 10k books and 53k users, with 99.82% sparsity. In the end we successfully build up four different kinds CF algorithms.
+
 Here are our full report of this project: [full report](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Different%20Collaborative%20Filtering%20Algorithms%20in%20Recommendation%20System/Final_report.pdf)
+
 Here are our ppt presentation of this project: [ppt](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Different%20Collaborative%20Filtering%20Algorithms%20in%20Recommendation%20System/final_presentation.pptx)
 
 
