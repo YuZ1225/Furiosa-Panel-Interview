@@ -669,6 +669,7 @@ I noticed that if one string is a scramble of another, then they will have two p
 2. There will be a pivot point, and the two strings will only be one of the two conditions:
 
 <blockquote>
+	
 |string s1 | string s2|
 |-----|-----|
 |scramble(s1) | scramble(s2)|
