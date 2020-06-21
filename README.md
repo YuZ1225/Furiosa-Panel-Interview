@@ -18,6 +18,7 @@ Here are our full report of this project: [full report](https://github.com/YuZ12
 
 Here are our ppt presentation of this project: [ppt](https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/Different%20Collaborative%20Filtering%20Algorithms%20in%20Recommendation%20System/final_presentation.pptx)
 
+Following are some code snippets that I contribute in this project.
 
 <details>
 	<summary> Naive Bayes Collaborative Filter Code </summary>
@@ -457,6 +458,31 @@ hold off
 
 % save small_output_PMF.mat MAE_PMF RMSE_PMF
 ```
+</details>
+
+<details>
+	<summary>Some result images</summary>
+	
+<details>
+	<summary>Optimize latent dimension d</summary>
+	
+![image d](https://octodex.github.com/images/yaktocat.png)
+</details>
+<details>
+	<summary>Optimize $\lambda$</summary>
+	
+![image d](https://octodex.github.com/images/yaktocat.png)
+</details>
+<details>
+	<summary>Some result images</summary>
+	
+![image d](https://octodex.github.com/images/yaktocat.png)
+</details>
+<details>
+	<summary>Some result images</summary>
+	
+![image d](https://octodex.github.com/images/yaktocat.png)
+</details>
 </details>
 
 
