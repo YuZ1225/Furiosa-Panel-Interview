@@ -45,4 +45,4 @@
 
 
 
-# [resume](#Furiosa-Panel-Interview)
+# [resume]<https://github.com/YuZ1225/Furiosa-Panel-Interview/blob/master/README.md#furiosa-panel-interview>
