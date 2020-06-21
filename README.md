@@ -703,20 +703,21 @@ In this problem I came up with a solution using 2d dynamic programming, as the f
 
 In this 2d vector(or list), <b>dp[i][j]</b> means the minimum distance between string (dp[0][0] to dp[0][i]) and string (dp[0][0] to dp[j][0]). For example, dp[2][2] means the minimum distance between string <b>'ro'</b> to string <b>'ho'</b>, which is one.
 
-Notice that if dp[0][i] != dp[j][0], then the value of dp[i][j] will be the minum of (dp[i-1][j-1], dp[i-1][j], dp[i][j-1]) plus one. If dp[0][i] == dp[j][0], then we can leave dp[0][i] and dp[j][0] alone, while dp[i][j] will always equal to dp[i-1][j-1]. Therefore we can fullfill the table and we can always find the minimum way through the table as the following shows:
+Notice that if dp[0][i] != dp[j][0], then the value of dp[i][j] will be the minimum of (dp[i-1][j-1], dp[i-1][j], dp[i][j-1]) plus one. If dp[0][i] == dp[j][0], then we can leave dp[0][i] and dp[j][0] alone, while dp[i][j] will always equal to dp[i-1][j-1]. Therefore we can fullfill the table and we can always find the minimum way through the table as the following shows:
 <blockquote>
 	
 |   |   |   |   |   |   |   |
 |---|---|---|---|---|---|---|
-| e | 4 | 4 | 3 | 3 | 3 | ***2*** |
-| s | 3 | 3 | 2 | 2 | ***2*** | 3 |
-| o | 2 | 2 | ***1*** | ***2*** | 3 | 4 |
-| r | 1 | ***1*** | 2 | 2 | 3 | 4 |
-|   | 0 | 1 | 2 | 3 | 4 | 5 |
+| e | 4 | 4 | 3 | 3 | 3 | **2** |
+| s | 3 | 3 | 2 | 2 | **2** | 3 |
+| o | 2 | 2 | **1** | **2** | 3 | 4 |
+| r | 1 | **1** | 2 | 2 | 3 | 4 |
+|   | **0** | 1 | 2 | 3 | 4 | 5 |
 |   |   | h | o | r | s | e |
 
 </blockquote>
 
+Following is my code snippet.
 
 <details>
 	<summary> My solution </summary>
