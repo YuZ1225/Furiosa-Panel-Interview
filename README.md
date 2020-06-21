@@ -164,6 +164,7 @@ function [PMF_output]= PMF(data_matrix, rating_to_pred, iteration, d, weight_mis
 end
 ```
 </details>
+
 [Back to Menu](#menu)
 <br>
 
@@ -454,6 +455,7 @@ hold off
 % save small_output_PMF.mat MAE_PMF RMSE_PMF
 ```
 </details>
+
 [Back to Menu](#menu)
 <br>
 
@@ -611,6 +613,15 @@ csvwrite('sample.csv', lab);
 ```
 </details>
 
+[Back to Menu](#menu)
+<br>
+
+<a id = scrm></a>
+## Leetcode 87. Scramble String
+
+[Back to Menu](#menu)
+<br>
+
 
 <a id = ed></a>
 ## Leetcode 72. Edit Distance
@@ -646,13 +657,7 @@ public:
 };
 ```
 </details>
-[Back to Menu](#menu)
-<br>
 
 [Back to Menu](#menu)
 <br>
-
-[Back to Menu](#menu)
-<br>
-
 
