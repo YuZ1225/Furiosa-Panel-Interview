@@ -13,8 +13,8 @@ This repository is used for quick access of Furiosa panel interview
 <a id = cf></a>
 ## Different Collaborative Filtering Algorithms in Recommendation System
 
+<a id = dd></a>
 <details>
-	<a id = dd></a>
 	<summary> sss </summary>
 	
 ```Matlab
@@ -62,6 +62,7 @@ NB_output.pred_label = pred_label;
 
 end
 ```
+<summary> sss </summary>
 </details>
 
 [Back to Menu](#dd)
