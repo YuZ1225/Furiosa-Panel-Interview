@@ -714,7 +714,7 @@ Notice that if dp[0][i] != dp[j][0], then the value of dp[i][j] will be the minu
 |   | 0 | 1 | 2 | 3 | 4 | 5 |
 |   |   | h | o | r | s | e |
 
-</b></blockquote>
+</blockquote>
 
 
 <details>
