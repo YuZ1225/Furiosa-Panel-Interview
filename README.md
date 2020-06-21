@@ -665,9 +665,9 @@ csvwrite('sample.csv', lab);
 <a id = scrm></a>
 ## Leetcode 87. Scramble String
 I noticed that if one string is a scramble of another, then they will have two properties:
+<blockquote>
 1. The characters in two string are the same.
 2. There will be a pivot point, and the two strings will only be one of the two conditions:
-
 <blockquote>
 	
 |string s1 | string s2|
@@ -679,6 +679,7 @@ or
 |string s1 | string s2|
 |-----|-----|
 |scramble(s2) | scramble(s1)|
+</blockquote>
 </blockquote>
 
 Then we can use recurrisive method to solve this problem.
