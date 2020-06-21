@@ -668,15 +668,15 @@ I noticed that if one string is a scramble of another, then it will satisfy two 
 1. The characters in two string are the same.
 2. There will be a pivot point, and:
 
-string 1 | string 2
----------|-----------
-scramble(s1) | scramble(s2)
+|string s1 | string s2|
+|-----|-----|
+|scramble(s1) | scramble(s2)|
 
 or
 
-string s1 | string s2
-----------|----------
-scramble(s2) | scramble(s1)
+|string s1 | string s2|
+|-----|-----|
+|scramble(s2) | scramble(s1)|
 
 I posted my solution on the leetcode discussion board: [my solution](https://leetcode.com/problems/scramble-string/discuss/635917/easy-understand-4ms-c-recursive-solution)
 
